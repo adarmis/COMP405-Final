@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+
+      .desc {
+        background-color: whitesmoke;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 2%;
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+      }
+
+      .backdrop {
+        background-image: url(img/sunset.jpg);
+        padding-top: 15%;
+        padding-bottom: 20%;
+        font-size: 600%;
+        background-position-y: -200px;
+        color: white;
+        z-index: 2;
+        box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.386), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 5%;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      #title {
+        font-size: 75%;
+        color: white;
+      }
+
+      img {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 1%;
+        margin-bottom: 5%;
+      }
+      
+      .bg-text {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+      .photography {
+        margin-top: 6%;
+        padding-top: 2%;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 5%;
+      }
+
+      .list {
+        list-style: none;
+        text-align: left;
+      }
+
+      .flexy {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 2.5%;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 30%;
+        margin-left: 2.5%;
+        margin-bottom: 5%;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
+
+      #pictures {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 2.5%;
+      }
+
+      .photos {
+        height: auto;
+        width: 50%;
+      }
+
+      .inquiries {
+        list-style: none;
+        line-height: 350%;
+        padding-bottom: 20%;
+      }
+
+      .end {
+        margin-bottom: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="hobby.html">Hobbies</a>
+    </div>
+    <div class="backdrop">
+      <h1 class="bg-text">Hacking</h1>
+    </div>
+    <div class="flex-container">
+      <div>
+        <h2>Why do we hack game consoles?</h2>
+        <p>The best way to preserve and enjoy you favorite childhood memories, is to backup the files personally, and play them while you still can. <br>
+          Nintendo has long since discontinued many of its most beloved consoles and their games alike, so fans like us are the only ones left who solely care about protecting art. 
+          </p>
+      </div>
+      <div>
+        <h2>What does the future of retro gaming look like?</h2>
+        <p>Honestly, I have no clue. I would love to say everything will get better but, money rules the world. <br>
+        Until we reach a day where you can rent the old Super Mario Bros. 2 for an afternoon to relive childhood, I'm just gonna keep on hacking.
+        </p>
+      </div>
+    </div>
+    <div class="flex-container end">
+      <div>
+        <h2>Resources</h2>
+        <p><a href="https://gamehistory.org">Learn why game preservation is important</a></p>
+        <p><a href="https://3ds.hacks.guide">Learn how to run custom firmware on your Nintendo 3ds</a></p>
+        <img style="width: 60%;" src="img/save.webp" alt="NYorker Ad">
+      </div>
+      <div>
+        <h2>Feel free to ask any Questions</h2>
+        <ul class="contact">
+          <li>Adarmis Perez</li>
+          <li><i class="fa fa-phone"></i>(603)748-1650</li>
+          <li><a href="mailto:aap1089@unh.edu"><i class="fa fa-envelope"></i>Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+

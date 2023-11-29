@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Retro Game Repair</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Video Games</title>
+    <style>
+      .backdrop {
+        background-image: url(img/retro_gaming.gif);
+        padding-top: 10%;
+        padding-bottom: 10%;
+        font-size: 600%;
+        background-position-y: -400px;
+        color: white;
+        margin-top: 0px;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 10%;
+      }
+
+    </style>
   </head>
   <body>
-    <nav>
-      <div class="logo">nintenDONE</div>
-      <div class="nav-items">
-        <a href="index.html">Home</a> <a href="about.html">About</a> 
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="hobby.html">Hacking</a>
+    </div>
+    <h1 class="backdrop">Retro Games</h1>
+    <div class="flex-container">
+      <div>
+        <h2>Wanna give that old Game Boy a second life?</h2>
+        <p>Take a trip around Yoshi's Island, or get lost in Candy Land!</p>
+        <img src="img/gbacomp.webp" alt="Game Boy">
+        <p>Left: 001 Middle: 101 Right: IPS</p>
       </div>
-    </nav>
-    <div class="content">
-        <div class="contbox">
-            <h1>Do you like replaying your favorite childhood games?</h1>
-            <h2>Let me help you out!</h2>
-        </div>
-        <div class="contbox">
-            <h1>Nintendo DS</h1>
-        </div>
+      <div>
+        <h2>Maybe you just wish Wii Sports didn't cost an arm and leg?</h2>
+            <p>Why should we pay the cost of a new console, to purchase one released in 2008? <br>
+            Because a massive stingy and anti-consumer corporation gave us no other choice.  
+            </p>
+        <h3>A "refurbished" Wii you can buy right now!</h3>
+        <img src="img/wii.png" alt="Wii">
+      </div>
     </div>
   </body>
 </html>
