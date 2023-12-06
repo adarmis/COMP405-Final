@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <style>
+    .desc {
+      background-color: whitesmoke;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2%;
+      width: 50%;
+      text-align: center;
+      margin-left: 25%;
+    }
+
+    .backdrop {
+      background-image: url(img/sunset.jpg);
+      padding-top: 15%;
+      padding-bottom: 20%;
+      background-position-y: -200px;
+      color: white;
+      z-index: 2;
+      box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.386), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 5%;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+
+
+    #title {
+      font-size: 75%;
+      color: white;
+    }
+
+    img {
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 1%;
+      margin-bottom: 5%;
+    }
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: auto;
+  text-align: center;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="hobby.html" class="w3-bar-item w3-button">Hacking</a>
+    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="explore.html" class="w3-bar-item w3-button">Explore</a>
+  </div>
+
+
+
+ 
+  <div class="backdrop w3-container">
+    <button class="w3-button w3-teal w3-xlarge w3-display-topleft" onclick="w3_open()">☰</button>
+    <h1 class="w3-container">Gallery</h1>
+  </div>
+  <div class="w3-container">
+    <div class="gallery w3-mobile">
+        <a href="img/teardown.png">
+          <img src="img/teardown.png" alt="Teardown">
+        </a>
+        <div class="desc">A gameboy torn down into its individual components</div>
+      </div>
+      
+      <div class="gallery w3-mobile">
+        <a href="img/GBASP.avif">
+          <img src="img/GBASP.avif" alt="Modded GBA SP">
+        </a>
+        <div class="desc">A modded Gameboy Adance SP</div>
+      </div>
+      
+      <div class="gallery w3-mobile">
+        <a href="img/GBApika.jpg">
+          <img src="img/GBApika.jpg" alt="Pikachu GBA">
+        </a>
+        <div class="desc">A custom modded Gameboy Advance</div>
+      </div>
+      
+      <div class="gallery w3-mobile">
+        <a href="img/wiiuGALL.jpg">
+          <img src="img/wiiuGALL.jpg" alt="Wii U">
+        </a>
+        <div class="desc">A special edition Wii U running custom firmware</div>
+      </div>
+  </div>
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+</body>
+
+</html>

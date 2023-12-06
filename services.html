@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .backdrop {
+      background-image: url(img/repair.jpg);
+      padding-top: 15%;
+      padding-bottom: 20%;
+      color: white;
+      z-index: 2;
+      box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.386), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 5%;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      background-repeat: no-repeat;
+      background-size: cover;
+        }
+        .price {
+            list-style-type: none;
+            border: 1px solid #eee;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .price:hover {
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        .price .header {
+            background-color: #111;
+            color: white;
+            font-size: 25px;
+        }
+
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .price .grey {
+            background-color: #eee;
+            font-size: 20px;
+        }
+
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .columns {
+            float: left;
+            width: 100%;
+            padding: 8px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="hobby.html" class="w3-bar-item w3-button">Hacking</a>
+        <a href="services.html" class="w3-bar-item w3-button">Services</a>
+        <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="explore.html" class="w3-bar-item w3-button">Explore</a>
+    </div>
+
+
+
+
+    <div class="backdrop w3-container">
+        <h1 class="w3-container w3-display-topmiddle">Services</h1>
+        <button class="w3-button w3-teal w3-xlarge w3-display-topleft" onclick="w3_open()">☰</button>
+    </div>
+    <!-- Services Offered -->
+    <div class="w3-container w3-content w3-center w3-padding-32">
+        <p class="w3-justify">Below are each of the 3 tiers of services I can provide for just about every common US
+            gaming
+            console. Feel free to reach out if you're interested in any type of services or have special
+            requests/concerns!
+        </p>
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <div class="columns">
+                    <ul class="price">
+                        <li>Basic</li>
+                        <li class="grey">$15</li>
+                        <li>Game Acquisition</li>
+                        <li>Simple Cheat</li>
+                        <li>Small Repairs</li>
+                        <li>Usually Mechanical</li>
+                        <li class="grey"><a href="index.html#contact" class="button">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="columns">
+                    <ul class="price">
+                        <li>Pro</li>
+                        <li class="grey">$30</li>
+                        <li>Game modding</li>
+                        <li>Console Boosting</li>
+                        <li>Console Enhancement</li>
+                        <li>Large Repairs</li>
+                        <li class="grey"><a href="index.html#contact" class="button">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="columns">
+                    <ul class="price">
+                        <li>Premium</li>
+                        <li class="grey">$40</li>
+                        <li>"God Console"</li>
+                        <li>Maximum Storage</li>
+                        <li>Games & Cheats</li>
+                        <li>Full Cleaning and Repair</li>
+                        <li class="grey"><a href="index.html#contact" class="button">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+
+</body>
+
+</html>

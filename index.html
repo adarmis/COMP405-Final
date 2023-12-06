@@ -1,73 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Video Games</title>
-    <style>
-      .backdrop {
-        background-image: url(img/retro_gaming.gif);
-        padding-top: 10%;
-        padding-bottom: 10%;
-        font-size: 600%;
-        background-position-y: -400px;
-        color: white;
-        margin-top: 0px;
-      }
 
-      .navbar {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Video Games</title>
+  <style>
+    .backdrop {
+      background-image: url(img/retro_gaming.gif);
+      padding-top: 10%;
+      padding-bottom: 10%;
+      font-size: 200%;
+      background-position-y: -400px;
+      color: white;
+      margin-top: 0px;
+    }
 
-      .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
+    img {
+      width: 50%;
+      margin-bottom: 10%;
+    }
+  </style>
+</head>
 
-      .navbar a:hover {
-        background: #ddd;
-        color: black;
-      }
+<body>
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="hobby.html" class="w3-bar-item w3-button">Hacking</a>
+    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="explore.html" class="w3-bar-item w3-button">Explore</a>
+  </div>
 
-      img {
-        width: 100%;
-        margin-bottom: 10%;
-      }
 
-    </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="hobby.html">Hacking</a>
+  <h1 class="backdrop">Retro Games</h1>
+  <button class="w3-button w3-teal w3-xlarge w3-display-topleft" onclick="w3_open()">☰</button>
+  <div class="w3-container w3-mobile">
+    <div>
+      <h2>Wanna give that old Game Boy a second life?</h2>
+      <p>Take a trip around Yoshi's Island, or get lost in Candy Land!</p>
+      <img src="img/gbacomp.webp" alt="Game Boy">
+      <p>Left: 001 Middle: 101 Right: IPS</p>
     </div>
-    <h1 class="backdrop">Retro Games</h1>
-    <div class="flex-container">
-      <div>
-        <h2>Wanna give that old Game Boy a second life?</h2>
-        <p>Take a trip around Yoshi's Island, or get lost in Candy Land!</p>
-        <img src="img/gbacomp.webp" alt="Game Boy">
-        <p>Left: 001 Middle: 101 Right: IPS</p>
-      </div>
-      <div>
-        <h2>Maybe you just wish Wii Sports didn't cost an arm and leg?</h2>
-            <p>Why should we pay the cost of a new console, to purchase one released in 2008? <br>
-            Because a massive stingy and anti-consumer corporation gave us no other choice.  
-            </p>
-        <h3>A "refurbished" Wii you can buy right now!</h3>
-        <img src="img/wii.png" alt="Wii">
+    <div class="w3-container w3-mobile">
+      <h2>Maybe you just wish Wii Sports didn't cost an arm and leg?</h2>
+      <p>Why should we pay the cost of a new console, to purchase one released in 2008? <br>
+        Because a massive stingy and anti-consumer corporation gave us no other choice.
+      </p>
+      <h3>A "refurbished" Wii you can buy right now!</h3>
+      <img src="img/wii.png" alt="Wii">
+    </div>
+  </div>
+
+  <!-- CONTACT HEADING -->
+  <section id="contact" class="section w3-dark-grey w3-hover-opacity">
+    <div class="w3-container w3-center">
+      <h2 class="w3-text-shadow">GET IN TOUCH</h2>
+      <p>Use the form below to message me with inquiries or service requests!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <div class="w3-container">
+      <div class="w3-card-4">
+        <div class="w3-container w3-dark-grey">
+          <h2>Contact Us</h2>
+        </div>
+        <form class="w3-container w3-padding-xlarge">
+          <label class="w3-label w3-large fa fa-address-card"> Name</label>
+          <input class="w3-input" type="text">
+          <label class="w3-label w3-large fa fa-inbox"> Email</label>
+          <input class="w3-input" type="text">
+          <label class="w3-input w3-large fa fa-paper-plane"> Message</label>
+          <textarea class="w3-input w3-border" style="resize:none"></textarea>
+          <br>
+          <button type="submit" class="w3-button">Submit</button>
+          <br><br>
+        </form>
       </div>
     </div>
-  </body>
+  </section>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+</body>
+
 </html>

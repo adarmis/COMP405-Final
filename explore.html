@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+  <style>
+    .desc {
+      background-color: whitesmoke;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2%;
+      width: 50%;
+      text-align: center;
+      margin-left: 25%;
+    }
+
+    body,h1,h2,h3,h4,h5,h6 {font-family: Roboto, sans-serif;}
+
+    .backdrop {
+      background-image: url(img/sunset.jpg);
+      padding-top: 15%;
+      padding-bottom: 20%;
+      background-position-y: -200px;
+      color: white;
+      z-index: 2;
+      box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.386), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 5%;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+
+
+    #title {
+      font-size: 75%;
+      color: white;
+    }
+
+    img {
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin: 1%;
+      margin-bottom: 5%;
+    }
+
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+
+    .flexy {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-top: 2.5%;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      width: 30%;
+      margin-left: 2.5%;
+      margin-bottom: 5%;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 2px 16px;
+    }
+
+    #pictures {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-top: 2.5%;
+    }
+
+    .photos {
+      height: auto;
+      width: 50%;
+    }
+
+    .inquiries {
+      list-style: none;
+      line-height: 350%;
+      padding-bottom: 20%;
+    }
+
+    .end {
+      margin-bottom: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="hobby.html" class="w3-bar-item w3-button">Hacking</a>
+    <a href="services.html" class="w3-bar-item w3-button">Services</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    <a href="explore.html" class="w3-bar-item w3-button">Explore</a>
+  </div>
+
+
+
+ 
+  <div class="backdrop w3-container">
+    <button class="w3-button w3-teal w3-xlarge w3-display-topleft" onclick="w3_open()">☰</button>
+    <h1 class="w3-container">Explore</h1>
+  </div>
+  <div class="w3-container">
+    <div class="w3-container">
+      <h2>Custom Firmware</h2>
+      <p>
+        <a href="https://3ds.hacks.guide">3ds CFW</a> <br>
+        <a href="https://wiiu.hacks.guide">Wii u CFW</a> <br>
+        <a href="https://www.pspunk.com/psp-cfw/">PSP CFW</a>
+      </p>
+     </div>
+        <div class="w3-container">
+      <h2>Emulation</h2>
+      <p>
+        <a href="https://www.retroarch.com">RetroArch</a> <br>
+        <a href="https://citra-emu.org">Citra 3ds Emulator</a> <br>
+        <a href="https://www.reddit.com/r/Roms/">r/Roms</a>
+      </p>
+        </div>
+      <div class="w3-container">
+        <h2>3rd Party Handhelds</h2>
+        <p>
+            <a href="https://www.ayntec.com">Ayntec</a> <br>
+            <a href="https://powkiddy.com/">Powkiddy</a> <br>
+            <a href="https://anbernic.com/">Anbernic</a>
+        </p>
+      </div>
+      <div class="w3-container">
+        <h2>Forums/Communities</h2>
+        <p>
+            <a href="https://www.reddit.com/r/emulation/">r/Emulation</a> <br>
+            <a href="https://www.reddit.com/r/homebrew/">r/Homebrew</a> <br>
+            <a href="https://www.reddit.com/r/retrogaming/">r/Retro Gaming</a>
+        </p>
+      </div>
+    </div>
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+</body>
+
+</html>
